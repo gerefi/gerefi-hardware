@@ -1,0 +1,43 @@
+name: Build GDI-4ch, digital-inputs and SENT
+
+on: [push, pull_request]
+
+jobs:
+  build-firmware:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          submodules: recursive
+
+      # Build machines don't have arm-none-eabi gcc, so let's download it and put it on the path
+      - name: Download & Install GCC
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+        run: | # Compiler hosted on our other git repo - avoids having to download from the nice folks at ARM every time
+          wget 'https://github.com/gerefi/build_support/raw/master/gcc-arm-none-eabi-9-2020-q2-update-x86_64-linux.tar.xz' -O compiler.tar.xz
+          tar -xvf compiler.tar.xz
+          echo "::add-path::`pwd`/gcc-arm-none-eabi-9-2020-q2-update/bin"
+
+      # Make sure the compiler we just downloaded works - just print out the version
+      - name: Test Compiler
+        run: arm-none-eabi-gcc -v
+
+      - name: Build GDI Firmware
+        working-directory: ./GDI-4ch/firmware
+        run: make
+
+      - name: Upload GDI binaries
+        uses: actions/upload-artifact@v3
+        with:
+          name: GDI4
+          path: ./GDI-4ch/firmware/build/gdi4*
+
+      - name: Build Digital Inputs Firmware
+        working-directory: ./digital-inputs/firmware
+        run: make
+
+      - name: Build SENT Firmware
+        working-directory: ./SENT-box/firmware
+        run: make

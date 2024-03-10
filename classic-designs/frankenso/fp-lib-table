@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name gerefi_LIB)(type KiCad)(uri "$(KIPRJMOD)\\..\\gerefi_lib\\gerefi_lib.pretty")(options "")(descr ""))
+  (lib (name Old_libs)(type Legacy)(uri "$(KIPRJMOD)\\..\\gerefi_lib\\project_specific_modules.mod")(options "")(descr ""))
+)

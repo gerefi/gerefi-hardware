@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name gerefi_176122-6)(type Legacy)(uri ${KIPRJMOD}/../gerefi_lib/176122-6.lib)(options "")(descr ""))
+  (lib (name gerefi_LOGO)(type Legacy)(uri ${KIPRJMOD}/../gerefi_lib/logo.lib)(options "")(descr ""))
+  (lib (name gerefi_ITEAD)(type Legacy)(uri ${KIPRJMOD}/../gerefi_lib/itead_hc-0X_bluetooth.lib)(options "")(descr ""))
+  (lib (name gerefi_Older)(type Legacy)(uri ${KIPRJMOD}/../gerefi_lib/KICAD_Older_Version.lib)(options "")(descr ""))
+  (lib (name gerefi_Polo)(type Legacy)(uri ${KIPRJMOD}/../gerefi_lib/Pololu_DRV8880.lib)(options "")(descr ""))
+)

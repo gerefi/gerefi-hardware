@@ -1,0 +1,26 @@
+[submodule "kicad-libraries"]
+	path = kicad-libraries
+	url = https://github.com/gerefi/kicad-libraries
+[submodule "ChibiOS"]
+	path = ChibiOS
+	url = https://github.com/gerefi/ChibiOS
+	branch = stable_20.3.x.gerefi
+[submodule "ext/kicad6-libraries"]
+	path = ext/kicad6-libraries
+	url = https://github.com/gerefi/kicad6-libraries
+[submodule "ext/openblt"]
+	path = ext/openblt
+	url = https://github.com/gerefi/openblt
+[submodule "ext/hellen-one"]
+	path = ext/hellen-one
+	url = https://github.com/andreika-git/hellen-one
+[submodule "ext/libfirmware"]
+	path = ext/libfirmware
+	url = https://github.com/gerefi/libfirmware
+[submodule "ext/googletest"]
+	path = ext/googletest
+	url = https://github.com/google/googletest.git
+	branch = v1.12.x
+[submodule "ext/wideband"]
+	path = ext/wideband
+	url = https://github.com/mck1117/wideband
