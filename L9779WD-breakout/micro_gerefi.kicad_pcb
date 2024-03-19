@@ -1846,7 +1846,7 @@
       (net 15 /MCU/shield))
     (pad 6 thru_hole oval (at -3.7 0 270) (size 2.38 1.5) (drill oval 1.88 1) (layers *.Cu *.Mask F.SilkS)
       (net 15 /MCU/shield))
-    (model ${RUSLIB}/3d/USB_Vert_C-1734753-1.wrl
+    (model ${gerLIB}/3d/USB_Vert_C-1734753-1.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))

@@ -18,7 +18,7 @@
 #define USBCFG_H
 
 extern const USBConfig usbcfg;
-extern SerialUSBConfig serusbcfg;
+extern SerialUSBConfig segerbcfg;
 extern SerialUSBDriver EFI_CONSOLE_USB_DEVICE;
 
 #endif  /* USBCFG_H */

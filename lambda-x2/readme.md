@@ -78,7 +78,7 @@ Default baud rate is 115200.
 
 # Bluetooth
 
-No extra steps needed to initialize JDY-33. Default device name is "gerefi WBO x2" (or "RuseEFI WBO x2 BLE" for BT BLE)
+No extra steps needed to initialize JDY-33. Default device name is "gerefi WBO x2" (or "gerefi WBO x2 BLE" for BT BLE)
 
 Default baud rate is 115200.
 

@@ -5433,7 +5433,7 @@
       (net 6 "+5V") (pintype "passive") (tstamp ddd9b2fb-91b7-4ddf-983b-96c4cf02b326))
     (pad "6" smd rect (at -0.95 -1.2 270) (size 0.7 1) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 113 "/USB_DP") (pintype "passive") (tstamp 3cf94b09-cb8c-4764-b90e-f84db71ae53c))
-    (model "${RUSLIB}/3d/TSOP-6.wrl"
+    (model "${gerLIB}/3d/TSOP-6.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))

@@ -24,17 +24,17 @@ void usb_serial_start() {
 	 * Initializes a serial-over-USB CDC driver.
 	 */
 	sduObjectInit(&EFI_CONSOLE_USB_DEVICE);
-	sduStart(&EFI_CONSOLE_USB_DEVICE, &serusbcfg);
+	sduStart(&EFI_CONSOLE_USB_DEVICE, &segerbcfg);
 
 	/*
 	 * Activates the USB driver and then the USB bus pull-up on D+.
 	 * Note, a delay is inserted in order to not have to disconnect the cable
 	 * after a reset.
 	 */
-	usbDisconnectBus(serusbcfg.usbp);
+	usbDisconnectBus(segerbcfg.usbp);
 	chThdSleepMilliseconds(250);
-	usbStart(serusbcfg.usbp, &usbcfg);
-	usbConnectBus(serusbcfg.usbp);
+	usbStart(segerbcfg.usbp, &usbcfg);
+	usbConnectBus(segerbcfg.usbp);
 
 	isUsbSerialInitialized = true;
 }
