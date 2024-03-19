@@ -13,7 +13,7 @@
 	url = https://github.com/gerefi/openblt
 [submodule "ext/hellen-one"]
 	path = ext/hellen-one
-	url = https://github.com/andreika-git/hellen-one
+	url = https://github.com/gerefi2/hellen-one
 [submodule "ext/libfirmware"]
 	path = ext/libfirmware
 	url = https://github.com/gerefi/libfirmware
